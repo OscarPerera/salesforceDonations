@@ -18,6 +18,12 @@
     width: 500px;
     
 }
+
+.anuncio{
+     margin:0px auto;
+    margin-top:100px;
+    width: 500px;
+}
 .titulo{
     font-size: 25px;
     margin-bottom: 10px;
@@ -25,8 +31,7 @@
 
 .contendor{
 border:2px solid black;
-height: 1300px;
-
+height: 1450px;
 }
 
 .centrado{
@@ -54,6 +59,11 @@ h2{
 
 h1{
     font-size: 15px;
+}
+
+h5{
+    font-size: 13px;
+    margin: 20px;
 }
 
 .formulario{
@@ -113,3 +123,9 @@ lightning-button-icon-stateful{
     color: blue;
     margin-right: 40px;
 }
+
+slds-modal__content{
+    margin: 5px;
+}
+
+
