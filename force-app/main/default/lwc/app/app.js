@@ -1,6 +1,6 @@
 import { LightningElement, track, api } from 'lwc';
 import createContactRecord from '@salesforce/apex/ContactController.createContactRecord';
-
+import createOpportunityRecord from '@salesforce/apex/ContactController.createOpportunityRecord';
 
 
 
