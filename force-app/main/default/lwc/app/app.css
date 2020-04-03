@@ -18,6 +18,16 @@
     width: 500px;
     
 }
+
+h5{
+    font-size: 13px;
+    margin: 20px;
+}
+
+.slds-modal__content{
+    margin: 5px;
+}
+
 .titulo{
     font-size: 25px;
     margin-bottom: 10px;
@@ -25,7 +35,7 @@
 
 .contendor{
 border:2px solid black;
-height: 1300px;
+height: 1450px;
 
 }
 

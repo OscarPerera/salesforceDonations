@@ -69,15 +69,41 @@
                       <lightning-checkbox-group name="Checkbox Group" label="Compartir en:" options={options} value={value} onchange={handleChange}></lightning-checkbox-group>
                     <lightning-icon src={icono.picture}></lightning-icon>
                 
-                    <button class="slds-button slds-button--neutral" onclick={insertarContacto}>
-                        <p>DONAR</p>
-                    </button>
+                   
                    
                 </div>
                 
                 <div class="slds-box slds-theme--inverse">
                     <center><h2>FAVOR DE ESCOGER UN MÉTODO DE PAGO</h2></center>
                 </div>
+                <br><br>
+                <div class="slds-m-top_medium slds-m-bottom_x-large">
+                    <!-- Button group: simple buttons -->
+                    <center>
+                    <lightning-button-group>
+                        <lightning-button label="PayPal" ></lightning-button>
+                        <lightning-button label="Oxxo" ></lightning-button>
+                    </lightning-button-group>
+                    </center>
+                </div>
+                            <br>
+                            <br>
+                            <center>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Oxxo_Logo.svg/1200px-Oxxo_Logo.svg.png" height="300" width="300">
+                            <h5>Al dar click en el botón 'DONAR', se generará una ficha de pago para que realice su donación en su OXXO más cercano.</h5>
+                            </center>
+                            <br>
+                            <br>
+                                <center>
+                                <button class="slds-button slds-button--neutral" onclick={darClick}>
+                                    <p>DONAR</p>
+                                </button>
+                                </center>
+            
+                        </div>
+            
+            
+                    </div>
                 <div class="formulario">
                     <button class="slds-button"><h2>OXXO</h2></button>
                 </div>
