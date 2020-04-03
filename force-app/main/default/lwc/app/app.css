@@ -1,0 +1,115 @@
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+.header{
+    padding:10px;
+    margin-bottom: -40px;
+     background-color:#0070D2;
+     background-image: url("");
+}
+
+.detalles-contenedor{
+    margin:0px auto;
+    margin-top:100px;
+    width: 500px;
+    
+}
+.titulo{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contendor{
+border:2px solid black;
+height: 1300px;
+
+}
+
+.centrado{
+    text-align: center;
+}
+
+.contenedor2{
+border-color: 5px black;
+height: 50px;
+width: 500px;
+}
+
+h3{
+    font-size: 20px;
+    display: block;
+    background-color:#64A0DD;
+    padding:10px;
+}
+
+h2{
+    font-size: 20px;
+    padding:10px;
+
+}
+
+h1{
+    font-size: 15px;
+}
+
+.formulario{
+    padding: 20px;
+    width: 350px;
+    margin-left: 75px;
+    
+    
+}
+
+.slds-button{
+padding: 5px;
+width: 50px;
+}
+.slds-button--neutral{
+padding: 5px;
+width: 100px;
+background-color: #4BC076;
+color: white;
+}
+
+.botones{
+    padding: 20px;
+    width: 350px;
+    margin-left: 75px;
+    margin-top: 50px; 
+    height: 30px;
+}
+
+.botones2{
+    margin-bottom: 30px;
+}
+
+.izquierda{
+    display:block;
+    margin-top:60px;
+    margin-left:-60px;
+    
+    width:95px;
+    
+}
+
+.derecha{
+    display:block;
+    margin-top:-32px;
+    margin-left:300px;
+   
+    width:70px;
+   
+}
+
+.backg{
+    background-color: #EEF1F6;
+}
+
+lightning-button-icon-stateful{
+    color: blue;
+    margin-right: 40px;
+}

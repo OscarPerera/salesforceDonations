@@ -1,0 +1,93 @@
+<template>
+    <div class="backg">
+        <div class="header">
+    
+            <span class="slds-avatar slds-avatar--large">
+                 
+            </span>
+            </div>
+        <div class="detalles-contenedor">
+               <center><h2 class="titulo">ÚNETE A NUESTRA CAUSA</h2></center>
+                <br>      
+            <div class="slds-border_top contendor ">
+                <div class="slds-box slds-theme--inverse">
+             <center> <h2>¿LISTO PARA DONAR?</h2></center>
+                </div>
+    
+        <br>
+        <br>
+        <section class="content">
+              <div class="columns"> 
+                <main class="main" >
+                    <div class="botones2 centrado">
+            5<lightning-button-icon-stateful value="5" icon-name="utility:food_and_drink" size="medium" selected={likeStateSize01} onclick={comidasSeleccionadas} alternative-text="5" data-button-number="01"></lightning-button-icon-stateful>
+            10<lightning-button-icon-stateful value="10" icon-name="utility:food_and_drink" size="medium" selected={likeStateSize02} onclick={comidasSeleccionadas} alternative-text="10" data-button-number="02"><p>5</p></lightning-button-icon-stateful>
+            20<lightning-button-icon-stateful value="20" icon-name="utility:food_and_drink" size="medium" selected={likeStateSize03} onclick={comidasSeleccionadas} alternative-text="20"  data-button-number="03"></lightning-button-icon-stateful>
+                    </div>
+                    <div class="botones2 centrado">
+            50<lightning-button-icon-stateful value="50" icon-name="utility:food_and_drink" size="medium" selected={likeStateSize04} onclick={comidasSeleccionadas} alternative-text="50"  data-button-number="04"></lightning-button-icon-stateful>
+            100<lightning-button-icon-stateful value="100" icon-name="utility:food_and_drink" size="medium" selected={likeStateSize05} onclick={comidasSeleccionadas} alternative-text="100"  data-button-number="05"></lightning-button-icon-stateful>
+            150<lightning-button-icon-stateful value="150" icon-name="utility:food_and_drink" size="medium" selected={likeStateSize06} onclick={comidasSeleccionadas} alternative-text="150"  data-button-number="06"></lightning-button-icon-stateful>
+                    </div>
+                </main>
+                    <div class="formulario">
+                   <lightning-input type="number"
+                         label="Cantidad"
+                         value={cantidadComidas}>
+                    </lightning-input>
+                    <br>
+                    <center><h1>Convertir comidas en: </h1></center>
+                    </div>
+    <center>
+     <button class="slds-button slds-button--brand" value="2.5" onclick={equivalenciaDolar}>     USD     </button>
+     <button class="slds-button slds-button--brand" value="50" onclick={equivalenciaPeso}>  MEX </button>
+    </center>
+       
+    <div class="formulario">
+        <lightning-input type="currency"
+                         label="Equivalencia"
+                         value={money}>
+        </lightning-input>
+        <br>
+        <center>
+        <br>
+         
+        </center>
+    </div> 
+            
+              </div>
+        </section>
+    
+                <div class="slds-box slds-theme--inverse">
+             <center> <h2>FAVOR DE INGRESAR SUS DATOS</h2></center>
+                </div>
+                <div class="formulario">
+                  
+                    <lightning-input type="text" name="name" label="Nombre" aria-placeholder="Name" value={nombre} onchange={actualizaNombre}></lightning-input>
+                    <lightning-input type="text" name="lastname" label="Apellido" value={apellido} onchange={actualizaApellido}></lightning-input>
+                    <lightning-input type="email" name="email" label="Correo electrónico" value={correo} onchange={actualizaCorreo}></lightning-input>
+                      <lightning-checkbox-group name="Checkbox Group" label="Compartir en:" options={options} value={value} onchange={handleChange}></lightning-checkbox-group>
+                    <lightning-icon src={icono.picture}></lightning-icon>
+                
+                    <button class="slds-button slds-button--neutral" onclick={insertarContacto}>
+                        <p>DONAR</p>
+                    </button>
+                   
+                </div>
+                
+                <div class="slds-box slds-theme--inverse">
+                    <center><h2>FAVOR DE ESCOGER UN MÉTODO DE PAGO</h2></center>
+                </div>
+                <div class="formulario">
+                    <button class="slds-button"><h2>OXXO</h2></button>
+                </div>
+    
+                <div class="botones">
+                    <lightning-button variant="brand" label="NEXT" title="Successful action" onclick={handleClick} class="derecha"></lightning-button>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
+    </template>
