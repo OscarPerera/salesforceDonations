@@ -1,4 +1,3 @@
-
 <template>
     <div class="backg">
         <div class="header">
@@ -34,7 +33,7 @@
                     <div class="formulario">
                    <lightning-input type="number"
                          label="Cantidad"
-                         value={cantidadComidas} required pattern="[0-9]*">
+                         value={cantidadComidas}>
                     </lightning-input>
                     <br>
                     <center><h1>Convertir comidas en: </h1></center>
@@ -47,7 +46,7 @@
     <div class="formulario">
         <lightning-input type="currency"
                          label="Equivalencia"
-                         value={money} >
+                         value={money}>
         </lightning-input>
         <br>
         <center>
@@ -60,90 +59,35 @@
         </section>
     
                 <div class="slds-box slds-theme--inverse">
-             <center> <h2>INGRESA TUS DATOS</h2></center>
+             <center> <h2> INGRESAR DATOS</h2></center>
                 </div>
                 <div class="formulario">
                   
-                    <lightning-input type="text" name="name" label="Nombre" aria-placeholder="Name" value={nombre} onchange={actualizaNombre} required></lightning-input>
-                    <lightning-input type="text" name="lastname" label="Apellido" value={apellido} onchange={actualizaApellido}  required></lightning-input>
-                    <lightning-input type="email" name="email" label="Correo electrónico" value={correo} onchange={actualizaCorreo}  required></lightning-input>
+                    <lightning-input type="text" name="name" label="Nombre" aria-placeholder="Name" value={nombre} onchange={actualizaNombre}></lightning-input>
+                    <lightning-input type="text" name="lastname" label="Apellido" value={apellido} onchange={actualizaApellido}></lightning-input>
+                    <lightning-input type="email" name="email" label="Correo electrónico" value={correo} onchange={actualizaCorreo}></lightning-input>
                       <lightning-checkbox-group name="Checkbox Group" label="Compartir en:" options={options} value={value} onchange={handleChange}></lightning-checkbox-group>
                     <lightning-icon src={icono.picture}></lightning-icon>
+                
+                    <button class="slds-button slds-button--neutral" onclick={insertarContacto}>
+                        <p>DONAR</p>
+                    </button>
+                   
                 </div>
                 
                 <div class="slds-box slds-theme--inverse">
-                    <center><h2>MÉTODO DE PAGO</h2></center>
+                    <center><h2>FAVOR DE ESCOGER UN MÉTODO DE PAGO</h2></center>
                 </div>
-
-    <br>
-    <br>
-    <div class="slds-m-top_medium slds-m-bottom_x-large">
-        <!-- Button group: simple buttons -->
-        <center>
-        <lightning-button-group>
-            <lightning-button label="PayPal" ></lightning-button>
-            <lightning-button label="Oxxo" ></lightning-button>
-        </lightning-button-group>
-        </center>
-    </div>
-                <br>
-                <br>
-                <center>
-                <img  height="300" width="300">
-                <h5>Al dar click en el botón 'DONAR', se generará una ficha de pago para que realice su donación en su OXXO más cercano.</h5>
-                </center>
-                <br>
-                <br>
-                    <center>
-                    <button class="slds-button slds-button--neutral" onclick={darClick}>
-                        <p>DONAR</p>
-                    </button>
-                    </center>
+                <div class="formulario">
+                    <button class="slds-button"><h2>OXXO</h2></button>
+                </div>
     
+                <div class="botones">
+                    <lightning-button variant="brand" label="NEXT" title="Successful action" onclick={handleClick} class="derecha"></lightning-button>
+                </div>
             </div>
     
     
         </div>
-
-
-    <!-- inicio de codigo extra para confirmar donación-->
-
-        <template if:true={openmodel}>
-        <div class="demo-only" style="height: 640px;">
-            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
-                <div class="anuncio">
-                    <header class="slds-modal__header">
-                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Cerrar" onclick={closeModal}>
-                            <lightning-icon icon-name="utility:close" size="medium">
-                            </lightning-icon>
-                            <span class="slds-assistive-text">Cerrar</span>
-                        </button>
-                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">¡Felicidades!</h2>
-                    </header>
-                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
-                        <center><h2><b>Tu donación se ha realizado correctamente.</b></h2><br/>
-                         <!--   <h2>A</h2> -->
-                        </center>
-                    </div>
-                </div>
-            </section>
-            <div class="slds-backdrop slds-backdrop_open"></div>
-        </div>
-        </template>
-    </div>
-</template>
-
-
-<!-- cierre de codigo extra-->
-
-
-
     </div>
     </template>
-
-
-
-
-
-
-
