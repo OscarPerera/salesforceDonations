@@ -48,10 +48,10 @@ VALOR_COMIDA=50;
 @track cantidadComidas= 0;
 @track money = 0;
 date = Date.now();
-nameOpportunity = "nueva oportunidad"
+nameOpportunity = "nueva oportunidad";
 
     insertarOpportunity(){
-        let opot = {'sobjectType': 'Opportunity'};
+        let opot = { 'sobjectType' : 'Opportunity' };
         opot.Name = this.nameOpportunity;
         opot.CloseDate = this.date;
         opot.Amount = this.cantidadComidas*VALOR_COMIDA;
