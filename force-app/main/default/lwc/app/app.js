@@ -1,4 +1,5 @@
 import { LightningElement, track, api } from 'lwc';
+import createContactRecord from '@salesforce/apex/ContactController.createContactRecord';
 
 export default class App extends LightningElement {
 
